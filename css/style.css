@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-image: url('../assets/web_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 5em; 
+    color:#EDEDED;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 5; ;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    width: 50%; 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 2.5em; 
+}
+
+a {
+    text-decoration: none;
+    color:#EDEDED;
+    padding: 0.5%; 
+}
+
+a:hover {
+    color:#f9a704;
+    text-decoration: line-through;
+}
+
+#bio {
+    width: 35%;  
+    padding: 1%; 
+    background-color: #edededb6;
+    color: #0D0D0D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 2em;
+    position: absolute;
+    top: 25%;  
+    z-index: 5; ;
+}
+ 
+#contact {
+    width: 15%; 
+    padding: 1%; 
+    background-color: #edededb6;
+    color: #0D0D0D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 2em;
+    position: fixed;
+    top: 15%;  
+    left: 65%; 
+    z-index: 10; ;
+}
+
+#contact a {
+    text-decoration: none;
+    color:#1C1C1C;
+    padding: 0.5%; 
+}
+
+#contact a:hover {
+    color:#f9a704;
+    text-decoration: line-through;
+}
+ 
+#cv {
+    width: 5%;  
+    padding: 1%; 
+    background-color: #edededb6;
+    color: #0D0D0D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 2em;
+    text-align: center;
+    position: fixed;
+    top: 30%;  
+    left: 80%; 
+    z-index: 5; ;
+}
+ 
