@@ -20,7 +20,7 @@ body {
 
 header {
     width: 100%;
-    height: 5em; 
+    height: 3em; 
     color:#EDEDED;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@ header {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 nav {
@@ -46,31 +46,44 @@ nav {
 }
 
 h2 {
-    font-size: 2.5em; 
+    font-size: 1.5em;
 }
 
 a {
     text-decoration: none;
     color:#EDEDED;
-    padding: 0.5%; 
+    padding-left: 3%; 
+    padding-right: 3%; 
 }
 
 a:hover {
-    color:#f9a704;
+    color:#1C1C1C;
+    background-color: #ededed85;
     text-decoration: line-through;
 }
 
 #bio {
     width: 35%;  
-    padding: 1%; 
+    padding: 2%; 
     background-color: #edededb6;
     color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 2em;
+    font-size: 1em;
     position: absolute;
     top: 25%;  
     z-index: 5; ;
 }
+
+#bio a {
+  padding: 0; 
+}
+
+#bio a:hover {
+    color:#1C1C1C;
+    background-color: #ededed85;
+    text-decoration: line-through;
+}
+ 
  
 #contact {
     width: 15%; 
@@ -78,7 +91,7 @@ a:hover {
     background-color: #edededb6;
     color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 2em;
+    font-size: 1em;
     position: fixed;
     top: 15%;  
     left: 65%; 
@@ -92,7 +105,7 @@ a:hover {
 }
 
 #contact a:hover {
-    color:#f9a704;
+    color:#1C1C1C;
     text-decoration: line-through;
 }
  
@@ -102,7 +115,7 @@ a:hover {
     background-color: #edededb6;
     color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
     position: fixed;
     top: 30%;  
@@ -110,3 +123,59 @@ a:hover {
     z-index: 5; ;
 }
  
+#elevator {
+    position: fixed;
+    z-index: 100;
+    top: 0; 
+    right: 0; 
+    animation: elevator linear 12s infinite alternate;
+}
+
+@keyframes elevator {
+    0% {
+        transform-origin: left;
+        transform: translate(-200px, 0px) rotate(20deg);
+        
+    }
+
+    25% {
+        transform: translate(0px, 50px) rotate(-20deg) ;
+    }
+
+    50% {
+        transform: translate(-500px, 100px) rotate(-100 deg) ;
+    }
+
+    75% {
+        transform: translate(-100px, -300px) rotate(-75 deg) ;
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate( 10 deg);
+    }
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    
+ } 
