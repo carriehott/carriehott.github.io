@@ -157,7 +157,30 @@ a:hover {
 
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
-    
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        background-image: none; 
+    }
+
+    header {
+        width: 85%;
+    }
+
+    #bio {
+        width: 60%;
+        top: 10%; 
+    }
+
+    #contact {
+        display: none; 
+    }
+
+    #cv {
+        display: none; 
+    }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
