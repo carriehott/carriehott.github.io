@@ -199,6 +199,7 @@ a:hover {
 
     #all_projects {
         position: static;
+        margin-top: 10%;
         display: flex;
         flex-direction: column;
     }
