@@ -168,12 +168,24 @@ a:hover {
     }
 
     #bio {
-        width: 60%;
-        top: 10%; 
+        position: static;
+        width: 100%;
+        margin-top: 10%;
     }
 
     #all_projects {
-        top: 100%; 
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #project {
+        width: 100%; 
+    }
+    
+    #project img{
+        width: 90%; 
+ 
     }
  }
 
