@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 nav {
@@ -47,7 +47,7 @@ nav {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 a {
@@ -69,8 +69,10 @@ a:hover {
     background-color: #edededa8; 
     color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 1em;
-    margin-top: 10%;  
+    font-size: 1.15em;
+    line-height: 150%;
+    letter-spacing: .025em; 
+    margin-top: 5%;  
 }
 
 #bio a {
@@ -124,7 +126,9 @@ a:hover {
     background-color: #ededed6d; 
     color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 1em;
+    font-size: 1.15em;
+    line-height: 150%;
+    letter-spacing: .025em; 
     margin-top: 10%;  
 }
 
