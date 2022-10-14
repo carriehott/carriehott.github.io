@@ -34,6 +34,19 @@ header {
     z-index: 5; ;
 }
 
+header a {
+    text-decoration: none;
+    color:#EDEDED;
+    padding-left: 3%; 
+    padding-right: 3%; 
+}
+
+header a:hover {
+    color:#1C1C1C;
+    background-color: #ededed85;
+    text-decoration: line-through;
+}
+
 footer {
     margin-top: 10%;
     background-color: #1c1c1c51;
@@ -60,27 +73,15 @@ nav {
     justify-content: space-between;
 }
 
+
 h2 {
     font-size: 1.25em;
-}
-
-a {
-    text-decoration: none;
-    color:#EDEDED;
-    padding-left: 3%; 
-    padding-right: 3%; 
-}
-
-a:hover {
-    color:#1C1C1C;
-    background-color: #ededed85;
-    text-decoration: line-through;
 }
 
 #bio {
     width: 50%;  
     padding: 2%; 
-    background-color: #edededa8; 
+    background-color: #ededed67;
     color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     font-size: 1.15em;
@@ -90,13 +91,28 @@ a:hover {
 }
 
 #bio a {
-  padding: 0; 
+    text-decoration: none;
+    color:#EDEDED;
+    padding-left: 3%; 
+    padding-right: 3%; 
 }
 
 #bio a:hover {
     color:#1C1C1C;
     background-color: #edededb6;
     text-decoration: line-through;
+}
+
+#projects {
+    background-color: #ededed67;
+}
+#projects h1 {
+    font-size: 1.15em;
+    padding: 2%; 
+    line-height: 150%;
+    letter-spacing: .025em; 
+    margin-top: 5%;  
+    text-align: right;
 }
 
 #all_projects {
@@ -108,20 +124,22 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;  
     align-items: center;
-    margin-top: 10%;   
 }
 
-#project {
-    width: 30%; 
-    padding: 1%; 
+.project {
+    position: relative;
+    width: 30%;
+    margin: 1%; 
     text-align: center;
     flex-basis: 1;
     flex-grow: 0;
     flex-shrink: 1;
 }
 
-#project img{
-    width: 90%; 
+.thumb {
+    display: block;
+    width: 100%;
+    height: auto;
     padding: 1%; 
     text-align: center;
     flex-basis: 1;
@@ -129,9 +147,39 @@ a:hover {
     flex-shrink: 1;
 }
 
-#project a:hover {
-    opacity: .5;
-    background-color: transparent;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .15s ease;
+    background-color: #1c1c1cd7;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+#all_projects a:hover {
+    background-color: none;
 }
 
 #press {
@@ -147,15 +195,16 @@ a:hover {
 }
 
 #press a {
-    padding: 0; 
-  }
-  
-  #press a:hover {
-      color:#1C1C1C;
-      background-color: #edededb6;
-      text-decoration: line-through;
-  }
-  
+    text-decoration: none;
+    color:#EDEDED;
+}
+
+#press a:hover {
+    color:#1C1C1C;
+    background-color: #edededb6;
+    text-decoration: line-through;
+}
+
 
 #bio a {
   padding: 0; 
