@@ -275,13 +275,12 @@ h2 {
         flex-direction: column;
     }
 
-    #project {
+    .project {
         width: 100%; 
     }
     
-    #project img{
+   .thumb {
         width: 90%; 
- 
     }
 
     #press {
