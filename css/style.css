@@ -81,8 +81,9 @@ h2 {
 #bio {
     width: 50%;  
     padding: 2%; 
-    background-color: #ededed67;
-    color: #0D0D0D;
+    /*background-color: #ededed67;
+    color: #0D0D0D;*/
+    color: #EDEDED;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     font-size: 1.15em;
     line-height: 150%;
@@ -92,7 +93,8 @@ h2 {
 
 #bio a {
     text-decoration: none;
-    color:#EDEDED;
+    color:#1C1C1C;
+    background-color: #edededb6;
     padding-left: 3%; 
     padding-right: 3%; 
 }
@@ -101,10 +103,6 @@ h2 {
     color:#1C1C1C;
     background-color: #edededb6;
     text-decoration: line-through;
-}
-
-#projects {
-    background-color: #ededed67;
 }
 #projects h1 {
     font-size: 1.15em;
@@ -116,7 +114,8 @@ h2 {
 }
 
 #all_projects {
-    width: 100%;  
+    width: 100%; 
+    margin-top: 5%; 
     padding: 1%; 
     font-size: 1em;
     display: flex;
@@ -185,8 +184,6 @@ h2 {
 #press {
     width: 75%;  
     padding: 2%; 
-    background-color: #ededed6d; 
-    color: #0D0D0D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     font-size: 1.15em;
     line-height: 150%;
@@ -195,6 +192,7 @@ h2 {
 }
 
 #press a {
+    color: #0D0D0D;
     text-decoration: none;
     color:#EDEDED;
 }
