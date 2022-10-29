@@ -79,13 +79,13 @@ h2 {
 }
 
 #bio {
-    width: 50%;  
+    width: 60%;  
     padding: 2%; 
     /*background-color: #ededed67;
     color: #0D0D0D;*/
     color: #EDEDED;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 1.15em;
+    font-size: 1.5em;
     line-height: 150%;
     letter-spacing: .025em; 
     margin-top: 5%;  
@@ -185,7 +185,7 @@ h2 {
     width: 75%;  
     padding: 2%; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    font-size: 1.15em;
+    font-size: 1.25em;
     line-height: 150%;
     letter-spacing: .025em; 
     margin-top: 10%;  
@@ -203,6 +203,10 @@ h2 {
     text-decoration: line-through;
 }
 
+
+#press h1, h4 {
+    color:#EDEDED;
+}
 
 #bio a {
   padding: 0; 
